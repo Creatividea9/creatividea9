@@ -1,0 +1,43 @@
+.product-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 10px;
+    text-align: center;
+    font-family: arial;
+    align-items: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .product-card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .product-card button:hover {
+    opacity: 0.7;
+  }
+  
+  /* For multiple galleries */
+  
+  .product-galleries {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
