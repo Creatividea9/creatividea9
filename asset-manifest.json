@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/creatividea9/static/css/main.f927b241.css",
+    "main.js": "/creatividea9/static/js/main.e93668dc.js",
+    "static/js/787.09dc27e9.chunk.js": "/creatividea9/static/js/787.09dc27e9.chunk.js",
+    "index.html": "/creatividea9/index.html",
+    "main.f927b241.css.map": "/creatividea9/static/css/main.f927b241.css.map",
+    "main.e93668dc.js.map": "/creatividea9/static/js/main.e93668dc.js.map",
+    "787.09dc27e9.chunk.js.map": "/creatividea9/static/js/787.09dc27e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f927b241.css",
+    "static/js/main.e93668dc.js"
+  ]
+}
