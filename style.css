@@ -19,7 +19,7 @@
   
     /* Mobile view */
     @media (max-width: 800px) {
-      padding: 100px; /* Adjust as needed */
+      padding: 80px; /* Adjust as needed */
       margin: auto;
       background-position: center bottom, center top;
       background-image: url(/images/banner.jpg), url(paper.gif); /* Add the mobile background image */
