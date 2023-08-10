@@ -12,13 +12,11 @@
 
 } 
  */ 
-/*  .banner {
-    background-image: url(https://assets.rakhibazaar.com/resources/images/header-banner.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 290px;
-    width: 100%;
-    box-sizing: border-box;
+ .banner {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
   }
   
   /* Adjust padding for smaller screens */
