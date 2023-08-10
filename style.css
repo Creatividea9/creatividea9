@@ -1,32 +1,32 @@
 
-/* banner */
-/* .banner{
+/* /* banner */
+/* /* .banner{
     
-        background-image: url(/images/banner.jpg), url(paper.gif);
+        background-image: url(https://assets.rakhibazaar.com/resources/images/header-banner.jpg), url(paper.gif);
         background-position: right bottom, left top;
         background-repeat: no-repeat, repeat;
         padding: 290px ;
         background-position: center;
+        width: auto;
      
 
-} */
-.banner {
-    background-image: url(/images/banner.jpg), url(paper.gif);
-    background-position: right bottom, left top;
-    background-repeat: no-repeat, repeat;
-    padding: 290px;
+} 
+ */ 
+/*  .banner {
+    background-image: url(https://assets.rakhibazaar.com/resources/images/header-banner.jpg);
     background-position: center;
-  
-    /* Mobile view */
-    @media (max-width: 800px) {
-      padding: 80px; /* Adjust as needed */
-      margin: auto;
-      background-position: center bottom, center top;
-      background-image: url(/images/banner.jpg), url(paper.gif); /* Add the mobile background image */
-      background-size: cover; /* Fix the background image to cover the entire screen */
-    }
+    background-repeat: no-repeat;
+    padding: 290px;
+    width: 100%;
+    box-sizing: border-box;
   }
   
+  /* Adjust padding for smaller screens */
+  @media (max-width: 768px) {
+    .banner {
+      padding: 100px;
+    }
+  } */
 
 /* banner */
 
