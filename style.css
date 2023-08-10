@@ -11,20 +11,8 @@
      
 
 } 
- */ 
- .banner {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  }
-  
-  /* Adjust padding for smaller screens */
-  @media (max-width: 768px) {
-    .banner {
-      padding: 100px;
-    }
-  } */
+
+
 
 /* banner */
 
