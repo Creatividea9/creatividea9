@@ -61,17 +61,65 @@
     .social-icons li {
       margin-left: 10px; /* Add spacing between social icons */
     }
+    .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
   
     </style>
 <ul>
   <li><a class="active" href="index.html">Home</a></li>
   <li><a href="/About.html">About</a></li>
-  <li class="social-icons">
-    <a href="https://www.instagram.com/creatividea9/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/people/Creatividea9/100064235943852/" target="_blank"><i class="fab fa-facebook"></i></a>
-    <a href="mailto:Krishnadeora27@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
-    <a href="https://www.youtube.com/@Creatividea9" target="_blank"><i class="fab fa-youtube"></i></a>
-    
+  
+    <div class="dropdown">
+      <button class="dropbtn">Gallery<i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="#" >Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div> 
+    <li class="social-icons">
+      <a href="https://www.instagram.com/creatividea9/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/people/Creatividea9/100064235943852/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="mailto:Krishnadeora27@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+      <a href="https://www.youtube.com/@Creatividea9" target="_blank"><i class="fab fa-youtube"></i></a>
   </li>
 </ul>
 <!-- Navbar -->
