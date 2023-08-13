@@ -466,9 +466,59 @@ nextButtons.forEach((button, index) => {
 </ul>
 </div>
 
+<!--chatbot  -->
+<div class="chatbot-icon" id="chatbotIcon">
+  <img src="images/fav.jpeg" alt="Chatbot">
+</div>
+<div class="chatbot-window" id="chatbotWindow">
+  <div class="chatbot-messages" id="chatbotMessages">
+    <div class="message bot">Hello! How can I assist you today?</div>
+  </div>
+  <input type="text" class="user-input" id="userInput" placeholder="Type your message...">
+</div>
+<script>
+  const chatbotIcon = document.getElementById('chatbotIcon');
+  const chatbotWindow = document.getElementById('chatbotWindow');
+  const userInput = document.getElementById('userInput');
+  const chatbotMessages = document.getElementById('chatbotMessages');
+  
+  let isChatbotOpen = false;
 
+  chatbotIcon.addEventListener('click', toggleChatbot);
 
+  function toggleChatbot() {
+    isChatbotOpen = !isChatbotOpen;
+    chatbotWindow.style.display = isChatbotOpen ? 'block' : 'none';
+  }
 
+  userInput.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter') {
+      const userMessage = userInput.value;
+      if (userMessage.trim() !== '') {
+        appendMessage(userMessage, 'user');
+        // You can implement your logic to process the user's message and generate a bot response
+        const botResponse = generateBotResponse(userMessage);
+        appendMessage(botResponse, 'bot');
+        userInput.value = '';
+      }
+    }
+  });
+
+  function appendMessage(message, sender) {
+    const messageContainer = document.createElement('div');
+    messageContainer.classList.add('message', sender);
+    messageContainer.textContent = message;
+    chatbotMessages.appendChild(messageContainer);
+    chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+  }
+
+  function generateBotResponse(userMessage) {
+    // You can replace this with your actual logic to generate bot responses
+    return "You can contact us at Krishnadeora27@gmail.com or Call 8789676602.";
+  }
+  </script>
+
+/* chatbot */
   
 </body>
 </html>

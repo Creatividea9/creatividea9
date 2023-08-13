@@ -798,3 +798,92 @@ body, h1, h2, h3, p {
   
 
   /* product */
+
+
+
+  /* chat bot */
+
+  .chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #3D3E45;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  /* Styles for the chatbot window */
+  .chatbot-window {
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    width: 300px;
+    background-color:black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: none;
+    z-index: 999;
+  }
+  
+  /* Styles for the chatbot messages */
+  .chatbot-messages {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  /* Styles for the user input */
+  .user-input {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #E0E0E0;
+    padding: 10px;
+  }
+
+  /* Styles for the user message */
+  .message.user {
+    background-color: #F6F6F6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  .chatbot-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Styles for the chatbot icon image */
+.chatbot-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+ 
+  
+}
+
+
+  /* Styles for the bot message */
+  .message.bot {
+    background-color: #E0E0E0;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
