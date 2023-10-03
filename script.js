@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const products = [
       { images: ['product1-img1.jpg', 'product1-img2.jpg', 'product1-img3.jpg'], title: 'Product 1 Title' },
       { images: ['product2-img1.jpg', 'product2-img2.jpg', 'product2-img3.jpg'], title: 'Product 2 Title' },
+      
       // Add more products with their respective images and titles
     ];
   
@@ -104,7 +105,7 @@ function showSlides() {
 
 
   /* Count Down */
-  var countDownDate = new Date("Aug 30, 2023 00:00:00").getTime();
+  var countDownDate = new Date("Nov 10, 2023 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {

@@ -212,7 +212,7 @@
   <!-- products -->
 
   <div>
-    <h1 style="text-align: center; font-size: 50px;">   Products</h1>
+    <h1 style="text-align: center; font-size: 50px;">   Customer Reviews</h1>
     
     
     
@@ -222,11 +222,11 @@
         <div class="product-card">
           <div class="image-container">
             <button class="prev-button">&lt;</button>
-            <img src="/images/Rakhi/a.jpeg" alt="Product 1 - Image 1">
+            <img src="/images/review/cr.png" alt="Product 1 - Image 1">
             <button class="next-button">&gt;</button>
           </div>
           <div class="description">
-            <h2>Product Title 1</h2>
+            <h2 style="text-align: center;">Happy Customer</h2>
             <p>
               <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
               lorem eget quam vehicula fermentum at ac mi. Etiam rhoncus pretium
@@ -237,91 +237,7 @@
         </div>
     
         
-    <!-- Product Card 1 -->
-    <div class="product-card">
-      <div class="image-container">
-        <button class="prev-button">&lt;</button>
-        <img src="/images/Rakhi/c.jpeg" alt="Product 1 - Image 1">
-        <button class="next-button">&gt;</button>
-      </div>
-      <div class="description">
-        <h2>Product Title 1</h2>
-        <p>
-         <!--  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
-          lorem eget quam vehicula fermentum at ac mi. Etiam rhoncus pretium
-          nulla, eget vestibulum dui tincidunt vel. -->
-        </p>
-      </div>
-    </div>
-    
-    
-    <!-- Product Card 1 -->
-    <div class="product-card">
-      <div class="image-container">
-        <button class="prev-button">&lt;</button>
-        <img src="/images/Rakhi/d.jpeg" alt="Product 1 - Image 1">
-        <button class="next-button">&gt;</button>
-      </div>
-      <div class="description">
-        <h2>Product Title 1</h2>
-        <p>
-          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
-          lorem eget quam vehicula fermentum at ac mi. Etiam rhoncus pretium
-          nulla, eget vestibulum dui tincidunt vel. -->
-        </p>
-      </div>
-    </div>
-    <!-- Product Card 1 -->
-    <div class="product-card">
-      <div class="image-container">
-        <button class="prev-button">&lt;</button>
-        <img src="/images/Rakhi/g.jpeg" alt="Product 1 - Image 1">
-        <button class="next-button">&gt;</button>
-      </div>
-      <div class="description">
-        <h2>Product Title 1</h2>
-        <p>
-          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
-          lorem eget quam vehicula fermentum at ac mi. Etiam rhoncus pretium
-          nulla, eget vestibulum dui tincidunt vel. -->
-        </p>
-      </div>
-    </div>
-    <!-- Product Card 1 -->
-    <div class="product-card">
-      <div class="image-container">
-        <button class="prev-button">&lt;</button>
-        <img src="/images/Rakhi/k.jpeg" alt="Product 1 - Image 1">
-        <button class="next-button">&gt;</button>
-      </div>
-      <div class="description">
-        <h2>Product Title 1</h2>
-        <p>
-          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
-          lorem eget quam vehicula fermentum at ac mi. Etiam rhoncus pretium
-          nulla, eget vestibulum dui tincidunt vel. -->
-        </p>
-      </div>
-    </div>
-    <!-- Product Card 1 -->
-    <div class="product-card">
-      <div class="image-container">
-        <button class="prev-button">&lt;</button>
-        <img src="/images/Rakhi/m.jpeg" alt="Product 1 - Image 1">
-        <button class="next-button">&gt;</button>
-      </div>
-      <div class="description">
-        <h2>Product Title 1</h2>
-        <p>
-         <!--  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget
-          lorem eget quam vehicula fermentum at ac mi. Etiam rhoncus pretium
-          nulla, eget vestibulum dui tincidunt vel. -->
-        </p>
-      </div>
-    </div>
-        <!-- Add more product cards as needed -->
-    
-      </div>
+   
     
     
     
@@ -330,16 +246,8 @@
       const prevButtons = document.querySelectorAll('.prev-button');
     const nextButtons = document.querySelectorAll('.next-button');
     const products = [
-    ['d1.jpg','d2.jpg','d3.jpg','d4.jpg','d5.jpg'],
-    ['d6.jpg','d7.jpg','d8.jpg','d9.jpg','d10.jpg',],
-    ['d11.jpg','d12.jpg','d13.jpg'],
-      ['a.jpeg','b.jpeg','c.jpeg'],
-      ['d.jpeg', 'e.jpeg','f.jpeg'],
-      ['g.jpeg', 'h.jpeg','i.jpeg'],
-      ['j.jpeg', 'k.jpeg','l.jpeg'],
-      ['m.jpeg', 'n.jpeg','o.jpeg'],
-      ['1.jpeg', '2.jpeg','3.jpeg']
-
+      ['r1.jpg','r2.jpg','r3.jpg','r4.jpg','r5.jpg','r6.jpg','r7.jpg','r8.jpg','r9.jpg','r10.jpg','r11.jpg','r12.jpg','r13.jpg'],
+     
       // Add more products and images as needed
     ];
     
@@ -349,7 +257,7 @@
       const newImageIndex = nextImage ? (currentImageIndex + 1) % products[index].length : (currentImageIndex - 1 + products[index].length) % products[index].length;
       
       /* path of image */
-      image.src = '/images/Products/' + products[index][newImageIndex];
+      image.src = '/images/review/' + products[index][newImageIndex];
     }
     
     prevButtons.forEach((button, index) => {
