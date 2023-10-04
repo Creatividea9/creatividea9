@@ -893,7 +893,7 @@ body, h1, h2, h3, p {
 
   .notification-tab {
     position: fixed;
-    bottom: 80px;
+    bottom: 90px;
     right: 20px;
     background-color: #3498db;
     color: white;
