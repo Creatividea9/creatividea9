@@ -887,3 +887,36 @@ body, h1, h2, h3, p {
     border-radius: 5px;
     margin-bottom: 10px;
   }
+
+  /*notification menu*/
+
+
+  .notification-tab {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .notification-text {
+    flex: 1;
+  }
+  
+  .close-button {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    padding: 10px px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    background-color: #c0392b;
+  }
+  

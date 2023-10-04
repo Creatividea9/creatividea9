@@ -677,5 +677,39 @@ nextButtons.forEach((button, index) => {
 
 <!-- /* chatbot */ -->
   
+<!-- /* notification */ -->
+
+<div class="notification-tab">
+  <span class="notification-text"></span>
+  <button class="close-button" onclick="closeNotification()"><i class="fas fa-times"></i></button>
+</div>
+<script>
+  /*notification menu*/
+  const notificationTexts = [
+   "Need a gift? We got you.",
+   "Find your best gifts here!",
+   " Gifts for Every Emotion and Occasion"
+ ];
+ 
+ let currentIndex = 0;
+ 
+ function updateNotification() {
+   const notificationText = document.querySelector('.notification-text');
+   notificationText.textContent = notificationTexts[currentIndex];
+   currentIndex = (currentIndex + 1) % notificationTexts.length;
+ }
+ 
+ function closeNotification() {
+   var notificationTab = document.querySelector('.notification-tab');
+   notificationTab.style.display = 'none';
+ }
+ 
+ // Display initial notification text
+ updateNotification();
+ 
+ // Update notification text every 5 seconds
+ setInterval(updateNotification, 3000);
+ </script>
+
 </body>
 </html>
