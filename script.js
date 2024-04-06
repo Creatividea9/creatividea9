@@ -140,34 +140,3 @@ var x = setInterval(function() {
  /* Products */
 
 
-
-
-
-
-
- /* banner other */
-
- document.addEventListener("DOMContentLoaded", function() {
-  const slider = document.querySelector(".slider");
-  const sliderImages = document.querySelectorAll(".slider img");
-
-  let currentIndex = 0;
-  const slideInterval = 500; // Slide interval in milliseconds
-
-  // Function to start the slider
-  function startSlider() {
-      setInterval(() => {
-          currentIndex = currentIndex < sliderImages.length - 1 ? currentIndex + 1 : 0;
-          slideImage();
-      }, slideInterval);
-  }
-
-  // Function to slide images from left to right
-  function slideImage() {
-      const slideAmount = -1 * currentIndex * (100 / sliderImages.length); // Calculate slide amount
-      slider.style.transform = `translateX(${slideAmount}%)`;
-  }
-
-  // Call startSlider function to begin sliding
-  startSlider();
-});

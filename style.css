@@ -932,20 +932,5 @@ body, h1, h2, h3, p {
 
 
 
-.slider-containerr {
-    width: 100%;
-    overflow: hidden;
-}
 
-.slider {
-    display: flex;
-    transition: transform 0.8s ease-in-out; /* Adjust slide transition speed */
-}
-
-.slider img {
-    width: 100%;
-   
-}
-
-/* Media query for mobile responsiveness */
 
