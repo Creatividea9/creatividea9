@@ -948,9 +948,4 @@ body, h1, h2, h3, p {
 }
 
 /* Media query for mobile responsiveness */
-@media (max-width: 768px) {
-    .slider {
-        flex-direction: column;
-        height: auto;
-    }
-}
+

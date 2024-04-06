@@ -152,7 +152,7 @@ var x = setInterval(function() {
   const sliderImages = document.querySelectorAll(".slider img");
 
   let currentIndex = 0;
-  const slideInterval = 2000; // Slide interval in milliseconds
+  const slideInterval = 500; // Slide interval in milliseconds
 
   // Function to start the slider
   function startSlider() {
