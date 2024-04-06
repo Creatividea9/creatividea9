@@ -920,3 +920,41 @@ body, h1, h2, h3, p {
     background-color: #c0392b;
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider-containerr {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+    .slider {
+        flex-direction: column;
+        height: auto;
+    }
+}

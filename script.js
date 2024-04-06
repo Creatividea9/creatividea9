@@ -140,3 +140,34 @@ var x = setInterval(function() {
  /* Products */
 
 
+
+
+
+
+
+ /* banner other */
+
+
+ document.addEventListener("DOMContentLoaded", function() {
+  const slider = document.querySelector(".slider");
+  const sliderImages = document.querySelectorAll(".slider img");
+
+  let currentIndex = 0;
+  const intervalTime = 5000; // Slide interval in milliseconds
+
+  // Function to start the slider
+  function startSlider() {
+      setInterval(() => {
+          currentIndex = currentIndex < sliderImages.length - 1 ? currentIndex + 1 : 0;
+          slideImage();
+      }, intervalTime);
+  }
+
+  // Function to slide images
+  function slideImage() {
+      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+
+  // Call startSlider function to begin sliding
+  startSlider();
+});
