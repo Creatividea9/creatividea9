@@ -152,7 +152,7 @@ var x = setInterval(function() {
   const sliderImages = document.querySelectorAll(".slider img");
 
   let currentIndex = 0;
-  const slideInterval = 4000; // Slide interval in milliseconds
+  const slideInterval = 2000; // Slide interval in milliseconds
 
   // Function to start the slider
   function startSlider() {
@@ -164,7 +164,7 @@ var x = setInterval(function() {
 
   // Function to slide images from left to right
   function slideImage() {
-      const slideAmount = -1 * currentIndex * 100; // Calculate slide amount
+      const slideAmount = -1 * currentIndex * (100 / sliderImages.length); // Calculate slide amount
       slider.style.transform = `translateX(${slideAmount}%)`;
   }
 
