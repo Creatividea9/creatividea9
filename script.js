@@ -140,3 +140,33 @@ var x = setInterval(function() {
  /* Products */
 
 
+ document.addEventListener('DOMContentLoaded', function() {
+  const image = document.querySelector('.image-container img');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+
+  let currentImageIndex = 0;
+  const totalImages = 34;
+  const baseUrl = 'images/booklet/';
+
+  // Function to update the image source
+  function updateImage() {
+      const imageUrl = baseUrl + (currentImageIndex + 1) + '.png';
+      image.src = imageUrl;
+  }
+
+  // Event listener for previous button
+  prevButton.addEventListener('click', function() {
+      currentImageIndex = (currentImageIndex - 1 + totalImages) % totalImages;
+      updateImage();
+  });
+
+  // Event listener for next button
+  nextButton.addEventListener('click', function() {
+      currentImageIndex = (currentImageIndex + 1) % totalImages;
+      updateImage();
+  });
+
+  // Initially load the first image
+  updateImage();
+});
