@@ -147,25 +147,25 @@ var x = setInterval(function() {
 
  /* banner other */
 
-
  document.addEventListener("DOMContentLoaded", function() {
   const slider = document.querySelector(".slider");
   const sliderImages = document.querySelectorAll(".slider img");
 
   let currentIndex = 0;
-  const intervalTime = 5000; // Slide interval in milliseconds
+  const slideInterval = 4000; // Slide interval in milliseconds
 
   // Function to start the slider
   function startSlider() {
       setInterval(() => {
           currentIndex = currentIndex < sliderImages.length - 1 ? currentIndex + 1 : 0;
           slideImage();
-      }, intervalTime);
+      }, slideInterval);
   }
 
-  // Function to slide images
+  // Function to slide images from left to right
   function slideImage() {
-      slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+      const slideAmount = -1 * currentIndex * 100; // Calculate slide amount
+      slider.style.transform = `translateX(${slideAmount}%)`;
   }
 
   // Call startSlider function to begin sliding
