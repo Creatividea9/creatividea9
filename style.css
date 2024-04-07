@@ -949,6 +949,7 @@ body, h1, h2, h3, p {
 
 /* Media query for mobile responsiveness */
 
+/*booklet*/
 .booklet{
    
    
@@ -957,6 +958,6 @@ body, h1, h2, h3, p {
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(118,23,128,1) 35%, rgba(0,212,255,1) 100%);
 }
-
-
