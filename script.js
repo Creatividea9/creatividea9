@@ -140,6 +140,11 @@ var x = setInterval(function() {
  /* Products */
 
 
+
+
+
+ /*Booklets*/
+
  document.addEventListener('DOMContentLoaded', function() {
   const image = document.querySelector('.image-container img');
   const prevButton = document.querySelector('.prev-button');
@@ -170,3 +175,5 @@ var x = setInterval(function() {
   // Initially load the first image
   updateImage();
 });
+
+/*Booklets*/
